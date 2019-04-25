@@ -4,11 +4,11 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RNAppCenter", "RNAppCenter\RNAppCenter.csproj", "{7B40B9E0-6743-11E9-BE0B-3BA51A39421E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactNative", "..\node_modules\react-native-windows\ReactWindows\ReactNative\ReactNative.csproj", "{C7673AD5-E3AA-468C-A5FD-FA38154E205C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactNative", "..\..\..\react-native-windows\ReactWindows\ReactNative\ReactNative.csproj", "{C7673AD5-E3AA-468C-A5FD-FA38154E205C}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\node_modules\react-native-windows\ReactWindows\ReactNative.Shared\ReactNative.Shared.projitems*{c7673ad5-e3aa-468c-a5fd-fa38154e205c}*SharedItemsImports = 4
+		..\..\..\react-native-windows\ReactWindows\ReactNative.Shared\ReactNative.Shared.projitems*{c7673ad5-e3aa-468c-a5fd-fa38154e205c}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM

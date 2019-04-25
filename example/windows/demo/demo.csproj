@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{26c1fca2-d23a-43a0-aefa-d7decf85d514}</ProjectGuid>
+    <ProjectGuid>{26C1FCA2-D23A-43A0-AEFA-D7DECF85D514}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>demo</RootNamespace>
@@ -210,6 +210,10 @@
     <ProjectReference Include="..\..\node_modules\react-native-windows\ReactWindows\ReactNative\ReactNative.csproj">
       <Project>{c7673ad5-e3aa-468c-a5fd-fa38154e205c}</Project>
       <Name>ReactNative</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\node_modules\react-native-app-center\windows\RNAppCenter\RNAppCenter.csproj">
+      <Project>{7B40B9E0-6743-11E9-BE0B-3BA51A39421E}</Project>
+      <Name>RNAppCenter</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)' == 'ReleaseBundle' or '$(Configuration)' == 'DebugBundle'">

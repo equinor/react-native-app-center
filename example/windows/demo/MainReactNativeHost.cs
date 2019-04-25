@@ -2,6 +2,7 @@
 using ReactNative.Modules.Core;
 using ReactNative.Shell;
 using System.Collections.Generic;
+using App.Center.RNAppCenter;
 
 namespace demo
 {
@@ -24,6 +25,7 @@ namespace demo
         protected override List<IReactPackage> Packages => new List<IReactPackage>
         {
             new MainReactPackage(),
+            new RNAppCenterPackage(),
         };
     }
 }
