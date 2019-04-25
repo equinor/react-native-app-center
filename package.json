@@ -1,0 +1,17 @@
+
+{
+  "name": "react-native-app-center",
+  "version": "0.1.0",
+  "description": "React native wrapper for using Microsoft's AppCenter SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "app-center",
+    "microsoft"
+  ],
+  "author": "Brynjulf Risbakken",
+  "license": ""
+}
