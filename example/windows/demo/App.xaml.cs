@@ -1,4 +1,6 @@
 ﻿using ReactNative;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
 
 namespace demo
 {

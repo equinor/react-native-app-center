@@ -24,7 +24,7 @@ namespace App.Center.RNAppCenter
         {
             return new List<INativeModule>
             {
-                new RNAppCenterModule(),
+                new RNAppCenterModule(reactContext),
             };
         }
 

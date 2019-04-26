@@ -5,20 +5,20 @@ using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
-
+using System.Threading;
+using System.Threading.Tasks;
 namespace App.Center.RNAppCenter
 {
     /// <summary>
     /// A module that allows JS to share data.
     /// </summary>
-    class RNAppCenterModule : NativeModuleBase
+    class RNAppCenterModule : ReactContextNativeModuleBase
     {
         /// <summary>
         /// Instantiates the <see cref="RNAppCenterModule"/>.
         /// </summary>
-        internal RNAppCenterModule()
+        public RNAppCenterModule(ReactContext reactContext) :base(reactContext)
         {
-
         }
 
         /// <summary>
@@ -34,15 +34,47 @@ namespace App.Center.RNAppCenter
 
         
         [ReactMethod]
-        public void  start(String appId)
+        public void start(string appId)
         {
-            AppCenter.Start(appId, typeof(Microsoft.AppCenter.Analytics.Analytics));
+            RunOnDispatcher(async () =>
+            {
+                try
+                {
+                    bool isEnabled = await AppCenter.IsEnabledAsync();
+                    bool isConfigured = AppCenter.Configured;
+                    if (isConfigured == false)
+                    {
+                        AppCenter.Configure(appId);
+                        AppCenter.Start(typeof(Analytics));
+                    }
+                    else
+                    {
+                        if (isEnabled == false)
+                        {
+                            await AppCenter.SetEnabledAsync(true);
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    var ex = e;
+                }
+            });
         }
 
         [ReactMethod]
         public void track(string eventName)
         {
-            Microsoft.AppCenter.Analytics.Analytics.TrackEvent(eventName);
+            Analytics.TrackEvent(eventName);
+        }
+
+        /// <summary>
+        /// Run action on UI thread.
+        /// </summary>
+        /// <param name="action">The action.</param>
+        private static async void RunOnDispatcher(DispatchedHandler action)
+        {
+            await CoreApplication.MainView.CoreWindow.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, action).AsTask().ConfigureAwait(false);
         }
     }
 }
