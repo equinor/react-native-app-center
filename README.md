@@ -1,6 +1,8 @@
 
 # react-native-app-center
 
+Currently only supports windows
+
 ## Getting started
 
 `$ npm install react-native-app-center --save`
