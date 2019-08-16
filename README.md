@@ -1,7 +1,33 @@
 
-# react-native-app-center
+# react-native-app-center for Windows
 
-Currently only supports windows
+> Why? Since microsoft havent released bridge for windows yet.
+
+Currently only supports tracking of events.
+
+```javascript
+trackEvent(name,data)
+```
+
+Where the name is a string and data is a `key:"value"` set.
+
+```javascript
+trackEvent('eventname', {key: 'value'});
+```
+Note: value must be a string. v0.1.1 hard crashes if you provide it something else...
+So if you provide it an object, i suggest you `JSON.stringify(object)`
+
+Also, if you don't have data you could `track("string")`
+```javascript
+track('event string of some event');
+```
+
+
+Todo:
+- [ ] Crash-analytics
+- [ ] Whatever we need
+
+
 
 ## Getting started
 
