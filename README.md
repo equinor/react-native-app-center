@@ -14,8 +14,8 @@ Where the name is a string and data is a `key:"value"` set.
 ```javascript
 TrackEvent('eventname', {key: 'value'});
 ```
-Note: value must be a string. v0.1.1 hard crashes if you provide it something else...
-So if you provide it an object, i suggest you `JSON.stringify(object)`
+~~Note: value must be a string. v0.1.1 hard crashes if you provide it something else...
+So if you provide it an object, i suggest you `JSON.stringify(object)`~~
 
 _UPDATE: No longer crashes if you don't give it a string..._ https://github.com/equinor/react-native-app-center/pull/1
 
