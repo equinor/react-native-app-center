@@ -21,7 +21,7 @@ _UPDATE: No longer crashes if you don't give it a string..._ https://github.com/
 
 Also, if you don't have data you could `track("string")`
 ```javascript
-track('event string of some event');
+Track('event string of some event');
 ```
 
 
