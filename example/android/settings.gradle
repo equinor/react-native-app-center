@@ -1,0 +1,5 @@
+rootProject.name = 'demo'
+include ':react-native-app-center'
+project(':react-native-app-center').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-app-center/android')
+
+include ':app'

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="ReactNative" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="ReactNative">
+				<NamedResource name="ReactNative.xr.xml" uri="ms-resource://ReactNative/Files/ReactNative/ReactNative.xr.xml">
+					<Candidate type="Path">
+						<Value>ReactNative\ReactNative.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="DevSupport">
+					<NamedResource name="DevOptionDialog.xbf" uri="ms-resource://ReactNative/Files/ReactNative/DevSupport/DevOptionDialog.xbf">
+						<Candidate type="Path">
+							<Value>ReactNative\DevSupport\DevOptionDialog.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ProgressDialog.xbf" uri="ms-resource://ReactNative/Files/ReactNative/DevSupport/ProgressDialog.xbf">
+						<Candidate type="Path">
+							<Value>ReactNative\DevSupport\ProgressDialog.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RedBoxDialog.xbf" uri="ms-resource://ReactNative/Files/ReactNative/DevSupport/RedBoxDialog.xbf">
+						<Candidate type="Path">
+							<Value>ReactNative\DevSupport\RedBoxDialog.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Tracing">
+					<NamedResource name="LoggingActivityBuilderExtensions.tt" uri="ms-resource://ReactNative/Files/ReactNative/Tracing/LoggingActivityBuilderExtensions.tt">
+						<Candidate type="Path">
+							<Value>ReactNative\Tracing\LoggingActivityBuilderExtensions.tt</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,257 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-app-center\\windows\\RNAppCenter\\RNAppCenter.csproj": {}
+  },
+  "projects": {
+    "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-app-center\\windows\\RNAppCenter\\RNAppCenter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-app-center\\windows\\RNAppCenter\\RNAppCenter.csproj",
+        "projectName": "RNAppCenter",
+        "projectPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-app-center\\windows\\RNAppCenter\\RNAppCenter.csproj",
+        "packagesPath": "C:\\Users\\HSJO\\.nuget\\packages\\",
+        "outputPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-app-center\\windows\\RNAppCenter\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HSJO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.16299"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.16299": {
+            "projectReferences": {
+              "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNative\\ReactNative.csproj": {
+                "projectPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNative\\ReactNative.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.16299": {
+          "dependencies": {
+            "Microsoft.AppCenter": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "Microsoft.AppCenter.Analytics": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ChakraBridge\\ChakraBridge.vcxproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ChakraBridge\\ChakraBridge.vcxproj",
+        "projectName": "ChakraBridge",
+        "projectPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ChakraBridge\\ChakraBridge.vcxproj"
+      },
+      "frameworks": {
+        "native": {}
+      }
+    },
+    "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNativeWebViewBridge\\ReactNativeWebViewBridge.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNativeWebViewBridge\\ReactNativeWebViewBridge.csproj",
+        "projectName": "ReactNativeWebViewBridge",
+        "projectPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNativeWebViewBridge\\ReactNativeWebViewBridge.csproj",
+        "packagesPath": "C:\\Users\\HSJO\\.nuget\\packages\\",
+        "outputPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNativeWebViewBridge\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HSJO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.16299"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.16299": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.16299": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNative\\ReactNative.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNative\\ReactNative.csproj",
+        "projectName": "ReactNative",
+        "projectPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNative\\ReactNative.csproj",
+        "packagesPath": "C:\\Users\\HSJO\\.nuget\\packages\\",
+        "outputPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNative\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\HSJO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.16299"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.16299": {
+            "projectReferences": {
+              "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ChakraBridge\\ChakraBridge.vcxproj": {
+                "projectPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ChakraBridge\\ChakraBridge.vcxproj"
+              },
+              "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNativeWebViewBridge\\ReactNativeWebViewBridge.csproj": {
+                "projectPath": "C:\\Appl\\MAD\\mad-project-DFU\\node_modules\\react-native-windows\\ReactWindows\\ReactNativeWebViewBridge\\ReactNativeWebViewBridge.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.16299": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[4.1.5, )"
+            },
+            "fresco.imagepipeline": {
+              "target": "Package",
+              "version": "[0.1.7, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
