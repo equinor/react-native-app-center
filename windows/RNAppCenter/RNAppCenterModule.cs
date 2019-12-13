@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
+using Newtonsoft.Json.Linq;
 using ReactNative.Bridge;
 using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
@@ -52,21 +54,42 @@ namespace App.Center.RNAppCenter
         }
         catch (Exception e)
         {
-          var ex = e;
+          Debug.WriteLine(e.Message);
         }
       });
     }
 
     [ReactMethod]
-    public void trackEvent(string eventName, IDictionary<string, string> properties)
+    public void TrackEvent(string eventName, JObject extraData)
     {
-      Analytics.TrackEvent(eventName, properties);
+      try
+      {
+        IDictionary<string, string> dictObj = new Dictionary<string, string>();
+        foreach (var item in extraData)
+        {
+          dictObj.Add(item.Key, item.Value?.ToString());
+        }
+        Analytics.TrackEvent(eventName, dictObj);
+      }
+      catch (Exception ex)
+      {
+        Debug.WriteLine(ex.Message);
+      }
+
     }
 
     [ReactMethod]
-    public void track(string eventName)
+    public void Track(string eventName)
     {
-      Analytics.TrackEvent(eventName);
+      try
+      {
+        Analytics.TrackEvent(eventName);
+
+      }
+      catch (Exception ex)
+      {
+        Debug.WriteLine(ex.Message);
+      }
     }
 
     /// <summary>
