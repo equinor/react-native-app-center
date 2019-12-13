@@ -6,16 +6,18 @@
 Currently only supports tracking of events.
 
 ```javascript
-trackEvent(name,data)
+TrackEvent(name,data)
 ```
 
 Where the name is a string and data is a `key:"value"` set.
 
 ```javascript
-trackEvent('eventname', {key: 'value'});
+TrackEvent('eventname', {key: 'value'});
 ```
 Note: value must be a string. v0.1.1 hard crashes if you provide it something else...
 So if you provide it an object, i suggest you `JSON.stringify(object)`
+
+_UPDATE: No longer crashes if you don't give it a string..._ https://github.com/equinor/react-native-app-center/pull/1
 
 Also, if you don't have data you could `track("string")`
 ```javascript
